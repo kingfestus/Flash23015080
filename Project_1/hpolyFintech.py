@@ -82,18 +82,18 @@ def user_registration(*args, **kwargs):
     """
 
     userData = {}
-    username = input("Please enter your username: ")
-    pin = int(input('Please enter your pin: '))
-    age = int(input("Please enter your age: "))
-    amount = int(input("Please enter your deposit: "))
+    # username = input("Please enter your username: ")
+    # pin = int(input('Please enter your pin: '))
+    # age = int(input("Please enter your age: "))
+    # amount = int(input("Please enter your deposit: "))
 
     # Store data in userData dictionary
-    userData['username'] = username
-    userData['pin'] = pin
-    userData["age"] = age
-    userData['amount'] = amount
-    kwargs.update(userData)
-    return kwargs
+    # userData['username'] = username
+    # userData['pin'] = pin
+    # userData["age"] = age
+    # userData['amount'] = amount
+    userData.update(kwargs)
+    # return kwargs
 
     # collect the data from user and store it to the above defined dictionary,
     """
