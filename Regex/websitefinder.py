@@ -1,7 +1,7 @@
 import re
-import os  # Don't forget to import the os module
+import os 
 
-def urls(file_path):  # No changes needed here
+def urls(file_path):  
     urls = []
     url_regex = r"(https?://(?:www\.)?\w+\.\w+)"
     with open(file_path, 'r') as file:
@@ -12,7 +12,7 @@ def urls(file_path):  # No changes needed here
 
 def main():
     file_path = input("Enter the path to the text file: ")  # Prompt user for file path
-    if os.path.exists(file_path):  # Check if the file exists
+    if os.path.exists(file_path):  # Check if the file exis
         found_urls = urls(file_path)
         if found_urls:
             print("URLs found in the file:")
